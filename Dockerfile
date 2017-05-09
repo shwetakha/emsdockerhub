@@ -10,7 +10,7 @@ MAINTAINER pushpendra
 RUN apt-get update
 
 #RUN sudo apt-get install -y openjdk-7-jdk
-RUN apt-get install -y --no-install-recommends openjdk-8-jdk
+RUN apt-get install -y --no-install-recommends openjdk-7-jdk
 RUN apt-get install -y maven
 RUN sudo apt-get install -y tomcat7
  
