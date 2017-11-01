@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn clean test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/EmployeeApplication_24ed4a23e9144eb98af29b6944e198030ec1f001.war
