@@ -8,8 +8,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - cd target/surefire-reports; zip -r ../reports.zip *.xml
+##      - cd target/surefire-reports; zip -r ../reports.zip *.xml
 artifacts:
   files:
     - target/EmployeeApplication_*.war
-    - target/reports.zip
+    - target/surefire-reports/*.xml
