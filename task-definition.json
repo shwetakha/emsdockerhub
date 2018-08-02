@@ -1,0 +1,19 @@
+{
+  "family": "web",
+  "containerDefinitions": [
+    {
+      "name": "EMS",
+      "image": "144835985076.dkr.ecr.us-east-1.amazonaws.com/java-ci:latest",
+      "cpu": 100,
+      "memoryReservation": 256,
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "containerPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+     "essential": true
+    }
+  ]
+}
